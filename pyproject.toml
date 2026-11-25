@@ -1,0 +1,14 @@
+[project]
+name = "sec-dist-manifest"
+version = "0.1.0"
+description = "Incremental distribution manifest exercise"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
